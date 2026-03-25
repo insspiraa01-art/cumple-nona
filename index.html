@@ -1,9 +1,10 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cumpleaños Nona</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación Nona</title>
 
 <style>
 
@@ -11,7 +12,7 @@ body{
 margin:0;
 display:flex;
 justify-content:center;
-background:#6ec6cf;
+background:#63c7c9;
 font-family:Arial;
 }
 
@@ -50,14 +51,13 @@ top:40%;
 left:18%;
 width:64%;
 text-align:center;
-font-size:36px;
+font-size:34px;
 font-weight:bold;
 color:white;
-background:rgba(0,170,180,0.85);
+background:rgba(0,170,180,0.9);
 padding:14px;
 border-radius:12px;
-letter-spacing:3px;
-box-shadow:0 4px 10px rgba(0,0,0,0.2);
+letter-spacing:2px;
 }
 
 .tiempo{
@@ -70,7 +70,7 @@ text-align:center;
 }
 
 .numero{
-font-size:32px;
+font-size:30px;
 }
 
 .label{
@@ -95,6 +95,24 @@ top:89%;
 left:25%;
 width:50%;
 height:6%;
+}
+
+/* AJUSTE CELULAR */
+
+@media (max-width:600px){
+
+.contador{
+top:36%;
+left:15%;
+width:70%;
+font-size:26px;
+}
+
+.boton-musica{
+top:25%;
+right:4%;
+}
+
 }
 
 a{
@@ -189,3 +207,4 @@ document.getElementById("segundos").innerHTML = segundos;
 
 </body>
 </html>
+```
