@@ -44,8 +44,6 @@ letter-spacing:3px;
 box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* TEXTO CONTADOR */
-
 .tiempo{
 display:flex;
 justify-content:space-around;
@@ -61,16 +59,6 @@ font-size:36px;
 
 .label{
 font-size:12px;
-}
-
-/* MUSICA ROCKOLA */
-
-.musica{
-position:absolute;
-top:58%;
-left:60%;
-width:25%;
-height:10%;
 }
 
 /* MAPA */
@@ -97,11 +85,29 @@ a{
 display:block;
 }
 
+/* reproductor oculto */
+
+.music-player{
+display:none;
+}
+
 </style>
 
 </head>
 
 <body>
+
+<!-- MUSICA AUTOMATICA -->
+
+<div class="music-player">
+<iframe
+width="0"
+height="0"
+src="https://www.youtube.com/embed/ZgdufzXvjqw?autoplay=1&loop=1&playlist=ZgdufzXvjqw"
+frameborder="0"
+allow="autoplay">
+</iframe>
+</div>
 
 <div class="container">
 
@@ -134,10 +140,6 @@ display:block;
 </div>
 
 </div>
-
-<a class="musica"
-href="https://www.youtube.com/watch?v=yBdKMv9_vPE"
-target="_blank"></a>
 
 <a class="mapa"
 href="https://maps.app.goo.gl/2mbsCxbHHR8FXzWd8"
