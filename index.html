@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +31,7 @@ display:block;
 
 .contador{
 position:absolute;
-top:36%;
+top:44%;
 left:18%;
 width:64%;
 text-align:center;
@@ -85,12 +86,6 @@ a{
 display:block;
 }
 
-/* reproductor oculto */
-
-.music-player{
-display:none;
-}
-
 </style>
 
 </head>
@@ -99,15 +94,9 @@ display:none;
 
 <!-- MUSICA AUTOMATICA -->
 
-<div class="music-player">
-<iframe
-width="0"
-height="0"
-src="https://www.youtube.com/embed/ZgdufzXvjqw?autoplay=1&loop=1&playlist=ZgdufzXvjqw"
-frameborder="0"
-allow="autoplay">
-</iframe>
-</div>
+<audio autoplay loop>
+<source src="rock.mp3" type="audio/mpeg">
+</audio>
 
 <div class="container">
 
