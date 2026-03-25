@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Cumpleaños Nona</title>
 
 <style>
@@ -37,12 +36,9 @@ display:block;
 
 .contador{
 position:absolute;
-top:41%;
+top:40%;
 left:18%;
 width:64%;
-height:120px;
-border:none;
-background:transparent;
 }
 
 /* BOTON MUSICA */
@@ -59,7 +55,7 @@ height:6%;
 
 .mapa{
 position:absolute;
-top:55%;
+top:48%;
 left:18%;
 width:64%;
 height:6%;
@@ -91,10 +87,27 @@ display:block;
 
 <!-- CONTADOR -->
 
-<iframe class="contador"
-src="https://www.tickcounter.com/countdown/9812998/my-countdown?hide_controls=true&transparent=true"
-scrolling="no">
-</iframe>
+<div class="contador">
+
+<script>
+(function(d, s, id) {
+var js, pjs = d.getElementsByTagName(s)[0];
+if (!d.getElementById(id)) {
+js = d.createElement(s);
+js.id = id;
+js.src = "https://www.tickcounter.com/static/js/loader.js";
+pjs.parentNode.insertBefore(js, pjs);
+}
+}(document, "script", "tickcounter-sdk"));
+</script>
+
+<a data-type="countdown"
+data-id="9813060"
+class="tickcounter"
+style="display:block;width:100%;position:relative;padding-bottom:25%;margin:0 auto;">
+</a>
+
+</div>
 
 <!-- MUSICA -->
 
