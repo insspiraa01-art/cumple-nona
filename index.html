@@ -1,136 +1,144 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Invitación Nona</title>
 
 <style>
+
 body{
-  margin:0;
-  display:flex;
-  justify-content:center;
-  background:#63c7c9;
-  font-family:Arial, sans-serif;
+margin:0;
+display:flex;
+justify-content:center;
+background:#63c7c9;
+font-family:Arial, sans-serif;
 }
 
 .container{
-  position:relative;
-  width:100%;
-  max-width:600px;
+position:relative;
+width:100%;
+max-width:600px;
 }
 
 .container img{
-  width:100%;
-  display:block;
+width:100%;
+display:block;
 }
 
 /* CONTADOR */
 
 .contador{
-  position:absolute;
-  top:40%;
-  left:18%;
-  width:64%;
-  text-align:center;
-  font-size:34px;
-  font-weight:bold;
-  color:white;
-  background:rgba(0,170,180,0.9);
-  padding:14px;
-  border-radius:12px;
-  letter-spacing:2px;
-  z-index:2;
+position:absolute;
+top:40%;
+left:18%;
+width:64%;
+text-align:center;
+font-size:34px;
+font-weight:bold;
+color:white;
+background:rgba(0,170,180,0.9);
+padding:14px;
+border-radius:12px;
+letter-spacing:2px;
+z-index:2;
 }
 
 .tiempo{
-  display:flex;
-  justify-content:space-around;
+display:flex;
+justify-content:space-around;
 }
 
-.numero{ font-size:30px; }
-.label{ font-size:12px; }
+.numero{
+font-size:30px;
+}
 
-/* CONTROLES MUSICA (debajo del título Música) */
+.label{
+font-size:12px;
+}
+
+/* CONTROLES MUSICA */
 
 .music-controls{
-  position:absolute;
-  top:28%;      /* antes estaba ~22% */
-  left:10%;     /* alineado a la izquierda */
-  transform:none;
-  display:flex;
-  gap:12px;
-  z-index:5;
+position:absolute;
+top:34%;
+left:10%;
+display:flex;
+gap:12px;
+z-index:5;
 }
 
 .music-controls button{
-  background:none;
-  border:none;
-  color:#ffffff;
-  font-size:14px;
-  cursor:pointer;
-  text-shadow:0 2px 6px rgba(0,0,0,0.5);
+background:none;
+border:none;
+color:white;
+font-size:14px;
+cursor:pointer;
+text-shadow:0 2px 6px rgba(0,0,0,0.6);
 }
 
-/* MAPA (zona invisible sobre el cuadro de Google Maps) */
+/* MAPA */
 
 .mapa{
-  position:absolute;
-  top:58%;      /* súbelo hasta el rótulo "Mapa" */
-  left:5%;      /* lado izquierdo donde está el letrero */
-  width:40%;    /* área grande para tocar fácil */
-  height:16%;
-  z-index:4;
+position:absolute;
+top:50%;
+left:5%;
+width:42%;
+height:16%;
+z-index:4;
 }
 
-/* CONFIRMAR (zona invisible sobre "Click aquí") */
+/* CONFIRMAR */
 
 .confirmar{
-  position:absolute;
-  top:90%;
-  left:35%;
-  width:30%;
-  height:5%;
-  z-index:4;
+position:absolute;
+top:90%;
+left:35%;
+width:30%;
+height:5%;
+z-index:4;
 }
 
-/* enlaces invisibles */
 a{
-  display:block;
-  text-decoration:none;
-  background:transparent;
+display:block;
+background:transparent;
 }
 
-/* AJUSTE MOVIL */
+/* AJUSTE CELULAR */
 
 @media (max-width:600px){
 
-  .contador{
-    top:36%;
-    left:15%;
-    width:70%;
-    font-size:26px;
-  }
+.contador{
+top:36%;
+left:15%;
+width:70%;
+font-size:26px;
+}
 
- .music-controls{
-  top:30%;
-  left:8%;
+.music-controls{
+top:36%;
+left:8%;
 }
 
 .mapa{
-  top:60%;
-  left:4%;
-  width:44%;
-  height:16%;
+top:52%;
+left:4%;
+width:46%;
+height:16%;
 }
 
-  .confirmar{
-    top:91%;
-    left:32%;
-    width:36%;
-  }
+.confirmar{
+top:91%;
+left:32%;
+width:36%;
+}
 
 }
+
 </style>
+
 </head>
 
 <body>
@@ -144,46 +152,71 @@ a{
 <img src="invitacion.png">
 
 <!-- CONTROLES MUSICA -->
+
 <div class="music-controls">
+
 <button onclick="playMusic()">▶ Reproducir</button>
+
 <button onclick="pauseMusic()">⏸ Pausar</button>
+
 </div>
 
 <!-- CONTADOR -->
+
 <div class="contador">
+
 <div class="tiempo">
 
 <div>
+
 <div class="numero" id="dias"></div>
+
 <div class="label">DÍAS</div>
+
 </div>
 
 <div>
+
 <div class="numero" id="horas"></div>
+
 <div class="label">HORAS</div>
+
 </div>
 
 <div>
+
 <div class="numero" id="minutos"></div>
+
 <div class="label">MIN</div>
+
 </div>
 
 <div>
+
 <div class="numero" id="segundos"></div>
+
 <div class="label">SEG</div>
+
 </div>
 
 </div>
+
 </div>
 
 <!-- MAPA -->
+
 <a class="mapa"
+
 href="https://maps.app.goo.gl/2mbsCxbHHR8FXzWd8"
+
 target="_blank"></a>
 
 <!-- CONFIRMAR -->
+
 <a class="confirmar"
+
 href="https://wa.me/3115929384?text=Hola,%20confirmo%20mi%20asistencia%20al%20evento%20de%20la%20nona"
+
 target="_blank"></a>
 
 </div>
@@ -195,11 +228,15 @@ target="_blank"></a>
 const audio = document.getElementById("audioFiesta");
 
 function playMusic(){
-  audio.play();
+
+audio.play();
+
 }
 
 function pauseMusic(){
-  audio.pause();
+
+audio.pause();
+
 }
 
 /* CONTADOR */
@@ -209,16 +246,23 @@ var fechaEvento = new Date("Apr 18, 2026 00:00:00").getTime();
 setInterval(function(){
 
 var ahora = new Date().getTime();
+
 var diferencia = fechaEvento - ahora;
 
 var dias = Math.floor(diferencia / (1000*60*60*24));
+
 var horas = Math.floor((diferencia % (1000*60*60*24)) / (1000*60*60));
+
 var minutos = Math.floor((diferencia % (1000*60*60)) / (1000*60));
+
 var segundos = Math.floor((diferencia % (1000*60)) / 1000);
 
 document.getElementById("dias").innerHTML = dias;
+
 document.getElementById("horas").innerHTML = horas;
+
 document.getElementById("minutos").innerHTML = minutos;
+
 document.getElementById("segundos").innerHTML = segundos;
 
 },1000);
@@ -226,5 +270,6 @@ document.getElementById("segundos").innerHTML = segundos;
 </script>
 
 </body>
+
 </html>
 ```
